@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lsheet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sheet_border"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Done"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="18dp"/>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/qr"
+        android:layout_marginTop="12dp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/btitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:text="COVID_19 Vaccination"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="100dp"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/purple_700"/>
+
+
+    <TextView
+        android:id="@+id/bname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="26dp"
+        android:padding="6dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="D.O.B."
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="32dp"
+        android:textSize="14sp"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/bdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="date"
+        android:layout_marginTop="1dp"
+        android:layout_marginStart="32dp"
+        android:textSize="15sp"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EXPIRES"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="32dp"
+        android:textSize="14sp"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/bexpiry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="expiry"
+        android:layout_marginTop="1dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="15dp"
+        android:textSize="15sp"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please have Photo ID available when presenting your pass for verification"
+        android:layout_marginTop="2dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="15dp"
+        android:textSize="14sp"
+        android:textColor="@color/white"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_print_24"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PRINT YOUR PASS"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_marginStart="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="40dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_delete_24"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="REMOVE YOUR PASS"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_marginStart="10dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

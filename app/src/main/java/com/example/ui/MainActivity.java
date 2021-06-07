@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
             e.printStackTrace();
         }
 
-        HelperAdapter adapter = new HelperAdapter(title,name,date,expiry,MainActivity.this);
+        HelperAdapter adapter = new HelperAdapter(MainActivity.this,title,name,date,expiry,MainActivity.this);
         recyclerView.setAdapter(adapter);
     }
 
