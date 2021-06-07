@@ -25,7 +25,7 @@
             android:padding="12dp"
             android:textStyle="bold"
             android:textSize="20sp"
-            android:textColor="@color/purple_700"/>
+            android:textColor="#24377d"/>
 
 
         <TextView
