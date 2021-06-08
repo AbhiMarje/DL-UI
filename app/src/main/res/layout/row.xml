@@ -86,15 +86,23 @@
 
         </LinearLayout>
 
-        <ImageView
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:gravity="end"
-            android:layout_gravity="bottom"
-            android:layout_marginBottom="15dp"
-            android:src="@drawable/nat"/>
-
     </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="8dp"
+        android:layout_gravity="end|bottom">
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/nat" />
+
+
+    </RelativeLayout>
+
 
 
 </androidx.cardview.widget.CardView>
