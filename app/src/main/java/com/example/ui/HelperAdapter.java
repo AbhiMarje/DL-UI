@@ -2,6 +2,7 @@ package com.example.ui;
 
 import android.app.Activity;
 import android.content.Context;
+import android.os.Handler;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,6 +12,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.google.android.material.bottomsheet.BottomSheetBehavior;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 
 import java.util.ArrayList;
@@ -53,8 +55,9 @@ public class HelperAdapter extends RecyclerView.Adapter<HelperAdapter.ViewHolder
             public void onClick(View v) {
                 BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(context, R.style.BottomSheetStyle);
                 View view = LayoutInflater.from(context).inflate(R.layout.bottom_sheet,
-                        (LinearLayout)holder.itemView.findViewById(R.id.lsheet));
-                TextView btitle,bname,bdate,bexpiry;
+                        (LinearLayout) holder.itemView.findViewById(R.id.lsheet));
+
+                TextView btitle, bname, bdate, bexpiry;
                 btitle = view.findViewById(R.id.btitle);
                 bname = view.findViewById(R.id.bname);
                 bdate = view.findViewById(R.id.bdate);
@@ -63,8 +66,16 @@ public class HelperAdapter extends RecyclerView.Adapter<HelperAdapter.ViewHolder
                 bname.setText(mname.get(position));
                 bexpiry.setText(mexpiry.get(position));
                 bdate.setText(mdate.get(position));
-                bottomSheetDialog.setContentView(view);
-                bottomSheetDialog.show();
+
+                Handler handler = new Handler();
+                handler.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        bottomSheetDialog.getBehavior().setPeekHeight(activity.findViewById(R.id.cl).getHeight());
+                        bottomSheetDialog.setContentView(view);
+                        bottomSheetDialog.show();
+                    }
+                }, 700);
             }
         });
 
